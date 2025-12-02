@@ -15,5 +15,5 @@ console.log(`Server running at: ${url}`);
 
 // Query, Mutation
 
-// typeDefs: - type definition
+// typeDefs: - type definitions and schemas
 

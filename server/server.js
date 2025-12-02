@@ -13,4 +13,7 @@ const {url} = await startStandalonServer(server,{
 
 console.log(`Server running at: ${url}`);
 
+// Query, Mutation
+
+// typeDefs: - type definition
 

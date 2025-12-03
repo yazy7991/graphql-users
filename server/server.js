@@ -1,8 +1,23 @@
 import {ApolloServer} from '@apollo/server';
 import {startStandalonServer} from '@apollo/server/standalone';
 
-// Create a new Apollo Server
+// Setup the type definition by defining the type for the Query and Mutation
+const typeDefs = `
+    type Query {
+    
+    }
+
+    type Mutation {
+    
+    }
+`;
+
+const resolvers = {}
+
+// Create a new Apollo Server - The Apollo Server accepts type definition and resolvers
 const server = new ApolloServer ({
+    typeDefs,
+    resolvers
 
 })
 
@@ -16,4 +31,7 @@ console.log(`Server running at: ${url}`);
 // Query, Mutation
 
 // typeDefs: - type definitions and schemas
+
+// resolvers
+
 

@@ -1,6 +1,6 @@
 import {ApolloServer} from '@apollo/server';
-import {startStandalonServer} from '@apollo/server/standalone';
-import { users } from './mockDatabase';
+import {startStandaloneServer} from '@apollo/server/standalone';
+import { users } from './mockDatabase.js';
 
 // Setup the type definition by defining the type for the Query and Mutation
 const typeDefs = `
@@ -76,7 +76,7 @@ const server = new ApolloServer ({
 })
 
 // Set server to listen for incoming request from the Apollo Client
-const {url} = await startStandalonServer(server,{
+const {url} = await startStandaloneServer(server,{
     listen: {port: 4000}
 })
 

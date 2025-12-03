@@ -32,7 +32,15 @@ const resolvers = {
             return users;
         },
 
-        
+        // In this contet, the parent parameter alows us to access the Query
+        getUserById: (parent,args) =>{
+            const id = args.id
+
+            return users.find((user)=>user.id===id);
+            
+        },
+
+
     },
     Mutation: {
 

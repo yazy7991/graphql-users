@@ -1,4 +1,4 @@
-# GraphQL Users API
+# GraphQL Users
 
 A simple GraphQL project that demonstrates how to build a Users API with queries, mutations, and resolvers.
 
@@ -36,8 +36,8 @@ This project is perfect for learning GraphQL basics such as:
 
 ## 📦 Setup Instructions
 1️⃣ Clone the project
-- git clone https://github.com/yourusername/graphql-users-api.git
-- cd graphql-users-api
+- git clone https://github.com/yourusername/graphql-users.git
+- cd graphql-users
 
 2️⃣ Install dependencies
 - npm install

@@ -61,10 +61,35 @@ const {url} = await startStandalonServer(server,{
 
 console.log(`Server running at: ${url}`);
 
-// Query, Mutation
+/* GraphQL has two main operation types:
 
-// typeDefs: - type definitions and schemas
+Query → Read data (GET)
 
-// resolvers
+Mutation → Write or modify data (POST/PUT/PATCH/DELETE)
+
+*/
+
+/*
+Type Definitions = the schema
+
+They describe:
+
+what data your API has
+
+what clients can query
+
+what operations exist (queries + mutations)
+
+the shape (fields, types) of the data
+
+They use the GraphQL Schema Definition Language (SDL).
+
+*/
+
+/*
+
+Resolvers = the functions that actually fetch or modify your data.
+
+*/
 
 

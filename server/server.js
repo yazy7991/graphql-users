@@ -4,11 +4,15 @@ import {startStandalonServer} from '@apollo/server/standalone';
 // Setup the type definition by defining the type for the Query and Mutation
 const typeDefs = `
     type Query {
+        getUsers: [User]
         
+        getUserById(id: ID!): User
+
     
     }
 
     type Mutation {
+        createUser(name: String!, age: Int!, isMarried: Boolean!): User
     
     }
 

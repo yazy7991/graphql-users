@@ -43,7 +43,8 @@ This project is perfect for learning GraphQL basics such as:
 - npm install
 
 3️⃣ Start the server
-- npm start
+- Include "start": "node [entry file].js" in th script sction of package.json file
+- Then run npm start
 
 
 The server will run at:

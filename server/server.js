@@ -52,6 +52,14 @@ const resolvers = {
 
             }
 
+            const newUser = {
+                id: (users.length + 1).toString(),
+                name,
+                age,
+                isMarried,
+            };
+
+            users.push(newUser);
             
 
         },

@@ -1,5 +1,6 @@
 import {ApolloServer} from '@apollo/server';
 import {startStandalonServer} from '@apollo/server/standalone';
+import { users } from './mockDatabase';
 
 // Setup the type definition by defining the type for the Query and Mutation
 const typeDefs = `
@@ -25,7 +26,18 @@ const typeDefs = `
     }
 `;
 
-const resolvers = {}
+const resolvers = {
+    Query: {
+        getUsers: () =>{
+            return users;
+        },
+
+        
+    },
+    Mutation: {
+
+    }
+}
 
 // Create a new Apollo Server - The Apollo Server accepts type definition and resolvers
 const server = new ApolloServer ({

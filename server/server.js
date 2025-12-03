@@ -33,6 +33,7 @@ const resolvers = {
         },
 
         // In this contet, the parent parameter alows us to access the Query
+        // In this context args is the body of the request
         getUserById: (parent,args) =>{
             const id = args.id
 
@@ -43,6 +44,18 @@ const resolvers = {
 
     },
     Mutation: {
+        createUser: (parent,args) =>{
+            const {name,age,isMarried} = args;
+
+            if(!name || !age ||isMarried === undefined){
+                throw new Error("All fields are required and isMarried must be true or false.");
+
+            }
+
+            
+
+        },
+
 
     }
 }

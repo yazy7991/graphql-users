@@ -50,7 +50,7 @@ This project is perfect for learning GraphQL basics such as:
 The server will run at:
 👉 http://localhost:4000/graphql
 
-## 🐛 Issue: Apollo Client Did Not Export useQuery and useMutation
+## 🐛 Issue: Apollo Client Did Not Export useQuery and useMutation hooks
 
 While integrating Apollo Client with React, I encountered the following error:
 

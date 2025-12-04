@@ -3,7 +3,7 @@
 export const users = [
     {id: "1", name: "Jane Smith", age: 30, isMarried: true},
     {id: "2", name: "Marco Polo", age: 10, isMarried: false},
-    {id: "3", name: "JGregory Alice", age: 35, isMarried: false},
+    {id: "3", name: "Gregory Alice", age: 35, isMarried: false},
     {id: "4", name: "Joan Pharm", age: 20, isMarried: true},
     {id: "5", name: "Robin williams", age: 25, isMarried: false},
     {id: "6", name: "Peter Parker", age: 30, isMarried: true},

@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import {ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client'
+import {ApolloClient,ApolloProvider,InMemoryCache,} from '@apollo/client'
 
 const client = new ApolloClient({
   // The URI contain the link to the Apollo Server
